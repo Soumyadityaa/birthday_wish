@@ -7,11 +7,11 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
   
-    if (username === "User" || password === "pass") {
+    if (username === "user" || password === "pass") {
       // Redirect to the desired page after successful login
       window.location.href = "dashboard.html";
     } 
-    else if (username === "user" || password === "pass") {
+    else if (username === "User" || password === "pass") {
       // Redirect to the desired page after successful login
       window.location.href = "dashboard.html";
     }
