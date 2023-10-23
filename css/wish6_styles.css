@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e2fbff;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3c59ff;
+}
+.image-container {
+    position: relative;
+}
+
+#hover-image {
+    width: 300px; /* Adjust the image size as needed */
+    transition: transform 0.3s ease-in-out;
+}
+
+#hover-image:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="website icon" type="png" href="img/heart.png">
+    <title>Happy Birthday, Sweetheart!</title>
+    <style>
+        /* Styles for the overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Styles for the popup */
+        .popup {
+            display: none;
+            position: fixed;
+            background-color: rgb(209, 237, 248);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 80%;
+            max-width: 900px;
+            max-height: 900px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+
+        }
+        #popup-iframe {
+          
+            position: relative; 
+            height: 600px;
+            max-width: 700px;
+            max-height: 950px;
+          
+}
+        /* Close button style */
+        .popup .close-btn {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Happy Birthday, Sweetheart! 😘</h1>
+        <center>
+            <div class="image-container">
+                <img id="shaking-image" src="img/gift.png" alt="Image" width="50">
+            </div>
+        </center>
+        <i id="gift-icon" class="fas fa-gift"></i>
+        
+    </header>
+    <div class="container">
+
+    
+    <section class="section" data-url="wish1.html">
+        <section class="birthday-wish hover-effect" id="wish1">
+            <h2>Sweet and Simple</h2>
+            <p>On this special day, I just want to let you know how much you mean to me. Happy birthday, my love!</p>
+        </section>
+    </section>
+
+    <section class="section" data-url="wish2.html">
+        <section class="birthday-wish hover-effect" id="wish2">
+            <h2> Romantic</h2>
+            <p>Every day with you feels like a beautiful dream. I hope your birthday is as magical as you are. Happy birthday, my darling!</p>
+        </section>  
+    </section>
+
+    <section class="section" data-url="wish3.html">
+        <section class="birthday-wish hover-effect" id="wish3">
+            <h2>Funny</h2>
+            <p>Getting older is like leveling up in the game of life. You're doing great! Happy birthday, my forever player two!</p>
+        </section>
+    </section>
+
+    <section class="section" data-url="wish4.html">
+        <section class="birthday-wish hover-effect" id="wish4">
+            <h2>Partner</h2>
+            <p>Through all the ups and downs, you've been my constant. I cherish every moment with you. Happy birthday, my rock!</p>
+        </section>
+    </section>
+
+    <section class="section" data-url="wish5.html">
+        <section class="birthday-wish hover-effect" id="wish5">
+            <h2>Queen</h2>
+            <p>As we celebrate your birthday today, I look forward to many more years of joy and love together. Happy birthday, my future!</p>
+        </section>
+    </section>
+
+    <section class="section" data-url="wish6.html">
+        <section class="birthday-wish hover-effect" id="wish6">
+            <h2>My Honey</h2>
+            <p>To the one who has stolen my heart, may your birthday be filled with laughter, love, and all the things that make you smile. You deserve nothing but the best. Happy birthday, my love!</p>
+        </section>
+    </section>
+
+    <section class="section" data-url="wish7.html">
+        <section class="birthday-wish hover-effect" id="wish7">
+            <h2>Future Together</h2>
+            <p>On this day, I want to remind you that you are the most precious gift in my life. Your presence brings warmth and happiness to my world. Here's to celebrating you today and every day. Happy birthday, my angel!</p>
+        </section>
+    </section>
+    
+    <section class="section" data-url="wish8.html">
+        <section class="birthday-wish hover-effect" id="wish8">
+            <h2>Future Wife</h2>
+            <p>As the sun rises on this special day, my love for you shines brighter than ever. You are the reason my life is so beautiful. Happy birthday to the most incredible girlfriend in the world!</p>
+        </section>
+    </section>
+   
+</div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <iframe id="popup-iframe" width="100%" height="100%"></iframe>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+        <source src="img/tune.mpeg" type="audio/mpeg">
+
+    </audio>
+
+    <footer>
+       <a href="index.html"><button>Bye Bye</button></a>
+    </footer>
+    <script src="js/script.js">
+       
+    </script>
+    
+</body>
+</html>
